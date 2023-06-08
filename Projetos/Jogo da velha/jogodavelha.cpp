@@ -92,7 +92,6 @@ int confereJogo(char tabuleiro[3][3],int linha,int coluna){
             
             }
         }
-    
     return 0;
 }
 
@@ -187,13 +186,16 @@ void jogo(string jogadorUm, string jogadorDois, int pontuacaoJogadorUm, int pont
         cout << jogadorDois << " ganhou \n";
          pontuacaoJogadorDois++;
           estadoJogo = 0;
-       };
+       } 
 
           rodada++;
      }
-
+  
     imprimeTabuleiro(tabuleiro,linha,coluna);  
-    
+       if(rodada == 10 && estadoJogo == 1){
+        cout << "O jogo deu velha";
+     }
+
     cout << "\nFim de jogo ";
     cout << "\nDeseja jogar novamente?";
     cout << "\n1-Continuar Jogando";
