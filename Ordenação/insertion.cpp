@@ -51,9 +51,4 @@ int main(){
     print_value(vetor);
     return 0;
 
-
-
-
-
-
 }

@@ -19,25 +19,24 @@ void shell_sort(int vetor[TAM]){
     int i, j, atual;
     int h = 1;
  
-    //De quantos em quantos será o pulo entre análises
+    //Quantos pulos sera pulado de analise em analise
     while(h < TAM){
         h = 3*h+1;
     }
  
     while(h > 1){
  
-        //Reduz a distância entre as análises
+        // diminui a distancia entre as analises
         h = h / 3;
  
         for(i = h; i < TAM; i++){
- 
-            //Elemento atual em análise
+            // Elemento que ta sendo analisado no momento
             atual = vetor[i];
  
-            //Elemento anterior ao analisado
+            //Elemento anterior do analisado
             j = i - h;
  
-            //Analisando membros anteriores
+          
             while( (j >=0) && (atual < vetor[j])){
  
                 //Posiciona os elmeentos uma posição para frente
@@ -50,15 +49,9 @@ void shell_sort(int vetor[TAM]){
  
             //Agora que o espaço foi aberto, colocamos o atual (Menor número) na posição correta
             vetor[j + h] = atual;
- 
-
- 
         }
  
     }
- 
- 
- 
  
 }
 int main(){
@@ -66,10 +59,4 @@ int main(){
     shell_sort(vetor);
     print_value(vetor);
     return 0;
-
-
-
-
-
-
 }

@@ -29,8 +29,6 @@ int main(){
     if(file){
 
         // contador
-        
-
 
         // Enquanto ele tiver encontrando uma letra ele vai imprimir a letra na tela
         // enquanto ( c é igual ao getc que ler o byte do arquivo na posição que ta enquanto

@@ -2,8 +2,6 @@
 #include <stdlib.h>
 
 int main(){
-
-
     /// Definindo variaveis
     int linhas = 3, colunas = 3, i, j ;
     int **matriz;

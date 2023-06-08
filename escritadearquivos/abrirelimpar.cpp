@@ -22,7 +22,6 @@ int main(){
 
     meuArquivo.close();
 
-
     return 0;
 
 }

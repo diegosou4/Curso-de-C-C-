@@ -17,7 +17,6 @@ int main(){
 
 
     // Passa o texto para o textolido
-    //
 
     for(string line ; getline(input,line);){
         textoLido += line;
@@ -25,13 +24,6 @@ int main(){
 
     // mostrar o conteudo
     cout << textoLido;
-
-
-
-
-
-
-
 
     return 0;
 }

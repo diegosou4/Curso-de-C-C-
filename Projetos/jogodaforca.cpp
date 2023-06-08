@@ -115,8 +115,8 @@ int jogar(int numerodeJogadores, string *jogadorUm, string *jogadorDois, int *ve
        
         limpatela();
         if(indiceAleatorio == 1){
-            cout <<  "O jogador: " << *jogadorUm << " Deve informar a palavra \n";
-            cout <<  "O jogador: " << *jogadorDois << " Deve advinhar a palavra \n";
+            cout <<  "O jogador: " << *jogadorUm << " deve informar a palavra \n";
+            cout <<  "O jogador: " << *jogadorDois << " deve advinhar a palavra \n";
             *verificaJogador = 1;
         }else{
             cout <<  "O " << *jogadorDois << " deve informar a palavra\n";
@@ -242,9 +242,10 @@ int jogar(int numerodeJogadores, string *jogadorUm, string *jogadorDois, int *ve
 
 void menuInicial(){
     
-    // Opcao escolhida pelo usuario
-    int opcao = 0;
-    string jogadorUm, jogadorDois = "";
+   
+    int opcao = 0;                                           // Opcao escolhida pelo usuario
+    string jogadorUm, jogadorDois = "";                      // Jogadores
+    string gitHub = "https://github.com/diegosou4";          // Meu github
     int verificaJogador;
      while (opcao < 1 || opcao > 3)
     {
@@ -280,7 +281,8 @@ void menuInicial(){
         cout << "Informacoes do jogo:\n";
         cout << "Jogo desenvolvido com curso de C++ do professor John Haste\n";
         cout << "Foram feitos alguns updates e correçoes de bugs por mim mesmo \n";
-        cout << "Feito por Diego, acesse meu github:https://github.com/diegosou4 \n";
+        cout << "Feito por Diego, acesse meu github: ";
+        cout << gitHub;
         cout << "\n1- Voltar";
         cout << "\n2- Sair";
         cin >> opcao;
